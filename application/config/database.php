@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
+	'hostname' => '72.60.233.51:3308',
+	'username' => 'mysqluser',
+	'password' => 'rootpass',
 	'database' => 'bbccolle_beta_bhcaportal',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
