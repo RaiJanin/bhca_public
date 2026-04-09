@@ -25,7 +25,7 @@ date_default_timezone_set('Asia/Manila');
 |
 */
 defined('BASE_URL') OR define('BASE_URL', (is_https() ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . dirname($_SERVER['SCRIPT_NAME']) . '/');
-$config['base_url'] = BASE_URL;
+$config['base_url'] = 'https://bhca-testing-app.9ybki8.easypanel.host/';
 //$config['base_url'] = "http://portal.bobhughes.edu.ph/";
 //$config['base_url']  =  "http://".$_SERVER['HTTP_HOST'];
 //$config['base_url'] .= preg_replace('@/+$@', '', dirname($_SERVER['SCRIPT_NAME'])).'/';
@@ -41,7 +41,7 @@ $config['base_url'] = BASE_URL;
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
