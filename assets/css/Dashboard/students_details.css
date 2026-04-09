@@ -1,0 +1,312 @@
+/* Student Details Styles */
+p.text-info{
+	background-color:#ccc;
+	text-align:center;
+	font-weight:bold;
+	color:#333 !important;
+	padding:4px 0;
+	font-size:16px;
+}
+
+.student-details-page .student-details-card {
+	border: none;
+	border-radius: 20px;
+	box-shadow: 0 18px 40px rgba(15, 23, 42, 0.09);
+	overflow: hidden;
+	background: linear-gradient(180deg, #f8fbff 0%, #ffffff 18%);
+	margin: 20px;
+}
+
+.student-details-page .student-details-title {
+	margin: 0;
+	text-align: center;
+	padding: 1.6rem 2rem 1.1rem;
+	font-size: 1.95rem;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+}
+
+.student-details-page .student-details-flash {
+	margin: 1.25rem 2rem 0;
+	padding: 0.9rem 1.1rem;
+	border-radius: 14px;
+	background: #eff6ff;
+	border: 1px solid #bfdbfe;
+	font-weight: 600;
+}
+
+.student-details-page .student-details-toolbar {
+	padding: 0 2rem;
+	margin-bottom: 0.25rem;
+}
+
+.student-details-page .student-details-actions {
+	padding: 0 2rem 0.75rem;
+	align-items: center;
+}
+
+.student-details-page .student-details-actions-left {
+	text-align: left;
+}
+
+.student-details-page .student-details-actions-right {
+	text-align: right;
+}
+
+.student-details-page .student-details-dropdown,
+.student-details-page .student-details-toolbar .btn {
+	border-radius: 999px;
+	box-shadow: 0 10px 24px rgba(15, 23, 42, 0.10);
+}
+
+.student-details-page .student-details-dropdown {
+	padding: 0.7rem 1rem;
+	background: #fff;
+	color: #0f172a;
+	border: 1px solid #dbe3ef;
+}
+
+.student-details-page .student-details-dropdown:hover,
+.student-details-page .student-details-dropdown:focus {
+	background: #fff;
+	color: #0f172a;
+	border-color: #bfd2eb;
+	box-shadow: 0 12px 28px rgba(37, 99, 235, 0.14);
+}
+
+/* Card Container Styles */
+.grid-margin .card {
+	border: none;
+	border-radius: 12px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	background: #fff;
+	margin: 20px;
+}
+
+.grid-margin .card .card-body {
+	padding: 0;
+}
+
+.grid-margin .card .heading {
+	margin: 0;
+	background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+	color: #fff;
+	text-align: center;
+	padding: 1.5rem;
+	font-weight: 700;
+	font-size: 1.75rem;
+	letter-spacing: 1px;
+}
+
+/* Form Container Padding */
+.grid-margin .card .form-sample {
+	padding: 2rem;
+}
+
+.grid-margin .card .heading + * {
+	padding: 1.5rem 2rem 0;
+}
+
+.grid-margin .card .heading ~ * {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.grid-margin .card .heading ~ :last-child {
+	padding-bottom: 2rem;
+}
+
+/* Blue Section Headers */
+.grid-margin .card p.card-description.text-info {
+	background: #2563eb;
+	border-left: 4px solid #2563eb;
+	border-radius: 10px;
+	color:  #fff !important;
+	font-size: 1rem;
+	font-weight: 600;
+	padding: 1rem 1.25rem;
+	margin: 1.5rem 0 1.25rem;
+	text-align: center;
+}
+
+/* Label + Value styling to match enrollment */
+.grid-margin .card .form-group {
+	margin-bottom: 1rem;
+}
+
+.grid-margin .card .col-form-label {
+	font-weight: 600;
+	color: #374151;
+	text-align: right;
+}
+
+.grid-margin .card .col-form-label::after {
+	content: ":";
+	margin-left: 0;
+}
+
+.parent-info-block .col-form-label.label-title::after {
+	content: "";
+}
+
+.grid-margin .card .col-sm-8 {
+	color: #111827;
+}
+
+/* Boxed rows across all details fields - Proper Spacing */
+.grid-margin .card .form-group.row {
+	display: flex !important;
+	flex-wrap: nowrap !important;
+	align-items: center !important;
+	background: #f9fafb;
+	border: 1px solid #d1d5db;
+	border-radius: 8px;
+	padding: 14px 18px;
+	margin-bottom: 16px;
+	margin-left: 0;
+	margin-right: 0;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+	transition: all 0.2s ease;
+}
+
+.grid-margin .card .form-group.row:hover {
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+	border-color: #9ca3af;
+}
+
+/* Ensure consistent column alignment */
+.grid-margin .card .form-group.row .col-sm-3,
+.grid-margin .card .form-group.row .col-sm-4,
+.grid-margin .card .form-group.row .col-sm-8,
+.grid-margin .card .form-group.row .col-sm-9 {
+	flex: 0 0 auto !important;
+	max-width: none !important;
+	width: auto !important;
+	padding-left: 8px !important;
+	padding-right: 8px !important;
+	min-width: 0 !important;
+}
+
+/* Label column styling */
+.grid-margin .card .form-group.row .col-sm-3 {
+	min-width: 160px;
+	text-align: right;
+}
+
+.grid-margin .card .form-group.row .col-sm-4 {
+	text-align: right;
+}
+
+/* Input/value column styling */
+.grid-margin .card .form-group.row .col-sm-8,
+.grid-margin .card .form-group.row .col-sm-9 {
+	flex: 1 !important;
+	min-width: 0 !important;
+	max-width: 100% !important;
+	overflow-wrap: anywhere;
+	word-break: break-word;
+	white-space: normal;
+	line-height: 1.5;
+}
+
+.grid-margin .card .col-form-label {
+	font-weight: 600;
+	color: #374151;
+	text-align: right;
+}
+
+/* Parent Info Block Styling */
+.parent-info-block .form-group.row {
+	display: flex !important;
+	flex-wrap: nowrap !important;
+	align-items: center !important;
+	background: #f9fafb;
+	border: 1px solid #d1d5db;
+	border-radius: 8px;
+	padding: 14px 18px;
+	margin-bottom: 16px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.parent-info-block .row {
+	margin-bottom: 16px;
+	margin-left: -8px;
+	margin-right: -8px;
+}
+
+.parent-info-block .row > [class*="col-"] {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.parent-info-block .form-group.row .col-sm-4,
+.parent-info-block .form-group.row .col-sm-8 {
+	flex: 0 0 auto !important;
+	max-width: none !important;
+	width: auto !important;
+	padding-left: 8px !important;
+	padding-right: 8px !important;
+	min-width: 0 !important;
+}
+
+.parent-info-block .form-group.row .col-sm-4 {
+	text-align: right;
+}
+
+.parent-info-block .form-group.row .col-sm-8 {
+	flex: 1 !important;
+	min-width: 0 !important;
+	max-width: 100% !important;
+	overflow-wrap: anywhere;
+	word-break: break-word;
+	white-space: normal;
+	line-height: 1.5;
+}
+
+/* Form Controls Styling */
+.grid-margin .card .form-control {
+	border-radius: 6px;
+	border: 1px solid #d1d5db;
+	padding: 10px 12px;
+}
+
+.grid-margin .card .form-control:focus {
+	border-color: #2563eb;
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Radio/Checkbox styling */
+.grid-margin .card .form-check {
+	margin: 0;
+	padding: 8px 0;
+}
+
+@media (max-width: 767.98px) {
+	.student-details-page .student-details-card {
+		margin: 12px 0 16px;
+		border-radius: 16px;
+	}
+
+	.student-details-page .student-details-title {
+		padding: 1.35rem 1rem 1rem;
+		font-size: 1.55rem;
+	}
+
+	.student-details-page .student-details-flash,
+	.student-details-page .student-details-toolbar,
+	.student-details-page .student-details-actions {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.student-details-page .student-details-actions-left,
+	.student-details-page .student-details-actions-right {
+		text-align: left;
+		margin-bottom: 0.75rem;
+	}
+
+	.student-details-page .student-details-dropdown {
+		width: 100%;
+	}
+}

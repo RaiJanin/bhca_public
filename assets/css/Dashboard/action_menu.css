@@ -1,0 +1,147 @@
+/* Action Menu Buttons Styling */
+.action-menu {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.student-page-header {
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: none;
+    margin: 0;
+    text-decoration: none !important;
+}
+.action-btn i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+.action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.action-btn-details { background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%); color: white; }
+.action-btn-assessment { background: linear-gradient(135deg, #8862e0 0%, #6f42c1 100%); color: white; }
+.action-btn-interview { background: linear-gradient(135deg, #57c7d4 0%, #26a69a 100%); color: white; }
+.action-btn-payments { background: linear-gradient(135deg, #19d895 0%, #10c35d 100%); color: white; }
+.action-btn-soa { background: linear-gradient(135deg, #ffaf00 0%, #ff9800 100%); color: white; }
+.action-btn-docs { background: linear-gradient(135deg, #ab8ce4 0%, #9c27b0 100%); color: white; }
+.action-btn-academics { background: linear-gradient(135deg, #58d8a3 0%, #26a69a 100%); color: white; }
+.action-btn-update { background: linear-gradient(135deg, #fb9678 0%, #ff7043 100%); color: white; }
+.action-btn-create { background: linear-gradient(135deg, #00aeef 0%, #0097a7 100%); color: white; }
+.action-btn-print { background: linear-gradient(135deg, #f5365c 0%, #f56036 100%); color: white; }
+
+/* Student Info Card */
+.student-info-card {
+    background:
+        radial-gradient(circle at top right, rgba(255,255,255,0.24), transparent 28%),
+        linear-gradient(135deg, #0f6cbd 0%, #1d4ed8 48%, #2563eb 100%);
+    border-radius: 24px;
+    padding: 26px 28px;
+    color: white;
+    box-shadow: 0 20px 40px rgba(37,99,235,0.24);
+    min-height: 100%;
+}
+
+.student-summary-name {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.student-summary-meta {
+    margin: 14px 0 0;
+    opacity: 0.95;
+    font-size: 0.98rem;
+}
+
+.student-summary-meta i {
+    margin-right: 6px;
+}
+
+.student-photo-wrap {
+    text-align: center;
+}
+
+.student-profile-img {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    box-shadow: 0 18px 36px rgba(15,23,42,0.16);
+    object-fit: cover;
+    background: #fff;
+}
+
+/* Status Badges */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.status-pending { background: #ffc107; color: #333; }
+.status-student-type { background: rgba(255,255,255,0.2); color: #fff; }
+.status-payment { background: #17a2b8; color: white; }
+.status-interview { background: #6610f2; color: white; }
+.status-active { background: #28a745; color: white; }
+
+@media (max-width: 991.98px) {
+    .student-info-card {
+        margin-bottom: 16px;
+    }
+
+    .student-summary-name {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .student-page-header {
+        margin-bottom: 18px;
+    }
+
+    .student-info-card {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .student-summary-name {
+        font-size: 1.45rem;
+    }
+
+    .student-profile-img {
+        width: 92px;
+        height: 92px;
+    }
+
+    .action-menu {
+        gap: 8px;
+    }
+
+    .action-btn {
+        flex: 1 1 100%;
+        min-height: 50px;
+    }
+}
