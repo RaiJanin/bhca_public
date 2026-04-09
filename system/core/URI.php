@@ -50,6 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  */
 class CI_URI {
 
+	protected $config;
 	/**
 	 * List of cached URI segments
 	 *
@@ -98,7 +99,8 @@ class CI_URI {
 	 */
 	public function __construct()
 	{
-		$this->config =& load_class('Config', 'core');
+		//$this->config =& load_class('Config', 'core');
+		$this->config = &get_config();
 
 		// If query strings are enabled, we don't need to parse any segments.
 		// However, they don't make sense under CLI.
