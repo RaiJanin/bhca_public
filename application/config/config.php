@@ -41,7 +41,7 @@ $config['base_url'] = 'https://bhca-testing-app.9ybki8.easypanel.host/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = '';
+$config['index_page'] = 'index.php';
 
 /*
 |--------------------------------------------------------------------------
