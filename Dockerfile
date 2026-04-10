@@ -1,28 +1,25 @@
-FROM php:8.2-apache
+FROM php:7.4-apache
 
-# Install PHP extensions
+# Install system dependencies
 RUN apt-get update && apt-get install -y \
-    libpng-dev \
-    libjpeg-dev \
-    libfreetype6-dev \
-    zip unzip git curl \
-    && docker-php-ext-install mysqli pdo pdo_mysql gd
+    libzip-dev \
+    unzip \
+    zip \
+    && docker-php-ext-install zip mysqli
 
-# Enable Apache rewrite
+# Enable Apache mod_rewrite (needed for CI3 URLs)
 RUN a2enmod rewrite
 
 # Set working directory
 WORKDIR /var/www/html
 
-# Copy project
-COPY . /var/www/html
+# Copy project files
+COPY . /var/www/html/
 
-# Set permissions (important for CI3)
+# Set permissions
 RUN chown -R www-data:www-data /var/www/html
 
-# Allow .htaccess override
+# Allow .htaccess overrides
 RUN echo "<Directory /var/www/html>\n\
     AllowOverride All\n\
 </Directory>" >> /etc/apache2/apache2.conf
-
-EXPOSE 80
